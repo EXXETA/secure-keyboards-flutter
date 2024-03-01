@@ -31,7 +31,12 @@ class _ViewKeyboardIdentifierState extends State<ViewKeyboardIdentifier> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         const Text("Keyboard Identifier:"),
-        Text(_keyboardIdentifier),
+        Text(
+          _keyboardIdentifier,
+          style: const TextStyle(
+            fontWeight: FontWeight.bold,
+          ),
+        ),
         const SizedBox(height: 16),
         Text(
           _keyboardIsValid ? "VALID" : "INVALID",

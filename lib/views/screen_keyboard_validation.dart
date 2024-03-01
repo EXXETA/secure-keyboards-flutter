@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_keyboard_identifier/views/view_keyboard_identifier.dart';
 
@@ -11,9 +13,18 @@ class ScreenKeyboardIdentifier extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text("Keyboard Identifier Validation"),
       ),
-      body: const Center(
-        child: ViewKeyboardIdentifier(),
-      ),// This trailing comma makes auto-formatting nicer for build methods.
+      body: Padding(
+        padding: const EdgeInsets.only(left: 16.0, right: 16.0),
+        child: Center(
+          child: Platform.isIOS
+              ? const Text(
+                  "You are using an iOS device.\n"
+                  "This app will only validate Android keyboards.",
+                  textAlign: TextAlign.center,
+                )
+              : const ViewKeyboardIdentifier(),
+        ),
+      ),
     );
   }
 }
