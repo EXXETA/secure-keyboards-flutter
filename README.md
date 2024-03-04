@@ -20,7 +20,7 @@ Using a Pixel 7 Pro Simulator you should see the following screen when running t
 ![Screenshot of the Keyboard Validation Screen](documentation/screenshots/secure_keyboards_flutter_pixel_7.png)
 
 ## Acknowledgements
-The code of this project is used in the "Privacy Keyboards" article on Medium [Privacy Secure Android Keyboards](https://medium.com/@mobile_44538/privacy-secure-android-keyboards-b11b322ffa41). Please check out the article for more information on the topic of privacy in the context of Android keyboards.
+The code of this project is used in the following article on Medium [Privacy Secure Android Keyboards](https://medium.com/@mobile_44538/privacy-secure-android-keyboards-b11b322ffa41). Please check out the article for more information on the topic of privacy in the context of Android keyboards.
 An Android version can also be found under [GitHub: secure-keyboards-android](https://github.com/EXXETA/secure-keyboards-android)
 
 ## License
